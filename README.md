@@ -65,6 +65,35 @@ You can change these settings in Godot by going to *Editor > Editor Settings > N
 }
 ```
 
+You will also need to configure GDScript to use hard tabs:
+
+```json
+{
+  "languages": {
+    "GDScript": {
+      "hard_tabs": true
+    }
+  }
+}
+```
+
+Optionally, if you have [`godot-gdscript-toolkit`](https://github.com/Scony/godot-gdscript-toolkit) installed, you can use `gdformat` to format GDScript files:
+
+```json
+{
+  "languages": {
+    "GDScript": {
+      "formatter": {
+        "external": {
+          "command": "gdformat",
+          "arguments": ["-"]
+        }
+      }
+    }
+  }
+}
+```
+
 ## Contributing
 
 ## Editing .scm files
